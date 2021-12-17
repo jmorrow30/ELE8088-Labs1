@@ -52,7 +52,7 @@ while loop<N:
   loop += 1
 
 
-print('For 2ii)\n','for N =',N,'PN11 =',PN11[0],'PN12 =',PN12[0],'PN21 =',PN21[0],'PN22 =',PN22[0],'Therefore as seen from the graph 2ii the values go towards the matrix P that solves DARE as N increases and are approximately equal to it at N = 50')
+print('For 2ii)\n','for N =',N,'PN11 =',PN11[0],'PN12 =',PN12[0],'PN21 =',PN21[0],'PN22 =',PN22[0],'Therefore as seen fro the graph in 2ii the values go towards the matrix P that solves DARE as N increases and are approximately equal to it at N = 50')
 
 PN12 = np.array(PN12)
 PN21 = np.array(PN21)
@@ -69,8 +69,8 @@ while PNloop < len(PN12):
     PNloop = len(PN12)-1
   PNloop += 1
 
-#Graph for 2iii
-#2iii) Graph shows that the values of PN converge to a value at higher N values
+#Graph for 2ii
+#2ii) Graph shows that the values of PN converge to a value at higher N values
 
 plt.plot(N_values,PN11,N_values,PN12,N_values,PN22)
 plt.legend(['PN 1,1','PN 1,2','PN 2,2'])
@@ -78,4 +78,3 @@ plt.xlabel('N')
 plt.ylabel('P')
 plt.savefig('2ii) P against N')
 plt.show()
-
