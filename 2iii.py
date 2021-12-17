@@ -60,8 +60,8 @@ PNdiff = PN21-PN12
 PNloop = 0
 
 while PNloop < len(PN12):
-  print(PN21[PNloop],PN12[PNloop])
-  if abs(PNdiff[PNloop]) <= abs(PN12[PNloop])*.00001:
+  #print(PN21[PNloop],PN12[PNloop])
+  if abs(PNdiff[PNloop]) <= abs(PN12[PNloop])*10**-14:
     if PNloop == len(PN12)-1:
       print('Matrix is symetric')
   else:
@@ -76,5 +76,7 @@ plt.plot(N_values,PN11,N_values,PN12,N_values,PN22)
 plt.legend(['PN 1,1','PN 1,2','PN 2,2'])
 plt.xlabel('N')
 plt.ylabel('P')
-plt.savefig('2iii) P against N')
+plt.savefig('2ii) P against N')
 plt.show()
+
+print('complete')
