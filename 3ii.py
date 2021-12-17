@@ -98,8 +98,6 @@ u_star = u_seq.value
 plt.plot(u_star.T)
 plt.xlabel('Time, t')
 plt.ylabel('Input')
-plt.savefig(‘Input against Time')
+plt.savefig('Input against Time')
 plt.cla()
 plt.clf()
-
-
