@@ -45,18 +45,14 @@ for i in range(N):
 N_values = []
 loop=0
 while loop<N:
-  N_values.append(i_values[loop]+1)
+  N_values.append(N-i_values[loop])
   loop += 1
 
-print(PN11)
-print('test =',PN11[0])
-
-print('For 2i)\n','P =',P,'N =',N,'\nPN11',PN11,'PN12',PN12,'PN22',PN22,'\n')
+#print('For 2i)\n','N =',N,'\nPN11',PN11,'PN12',PN12,'PN22',PN22,'\n')
 Ploop = 0
 while Ploop <= 4:
   print('P',Ploop+1,'=',[[[P[0,0,Ploop]],[P[0,1,Ploop]]],[[P[1,0,Ploop]],[[P[1,1,Ploop]]]]])
   Ploop += 1
-print('\n\nP =',P[0,0,0:5],P[0,1,0:5],P[1,1,0:5],'\n\n\n')
 #Graph for 2i
 plt.plot(N_values,P[0,0,0:5],N_values,P[1,0,0:5],N_values,P[1,1,0:5])
 plt.legend(['PN 1,1','PN 1,2','PN 2,2'])
